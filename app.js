@@ -83,7 +83,7 @@ for (i = 0; i < strCSV.length; i++) {
         row.push(cell);
         cell = "";
     } else if (char === "\n" || char === "\r") {
-        dataCells.push(cell);
+        row.push(cell);
         console.log(row.join(" "));
         dataCells.push(row);
         row = [];
